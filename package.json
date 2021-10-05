@@ -6,17 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest -e",
+    "test:watch": "jest --watch -e",
+    "test:cov": "jest --collect-coverage"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.5",
+    "redux-observable": "^2.0.0",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.0",
+    "@tinkin/eslint-config": "^0.2.27",
+    "@types/faker": "^5.5.8",
     "@types/react": "17.0.21",
+    "autoprefixer": "^10.3.4",
+    "babel-jest": "^27.2.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "faker": "^5.5.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.2.0",
+    "postcss": "^8.3.6",
+    "react-test-renderer": "^17.0.2",
+    "tailwindcss": "^2.2.15",
     "typescript": "4.4.3"
   }
 }
